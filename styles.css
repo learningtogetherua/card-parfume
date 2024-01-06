@@ -25,6 +25,9 @@ h4,
 span {
   font-family: "Fraunces", serif;
 }
+html,body {
+    height: 100%;
+}
 /* стилі "сторінки" - тло */
 body {
   background-color: #f2eae2;
@@ -35,7 +38,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  
 }
 /* стилі картки */
 article {
