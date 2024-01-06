@@ -1,0 +1,123 @@
+/* контроль розмірів елементів яким надани padding (можливо нерозривні пропуски були зайві :))*/
+*{
+    box-sizing: border-box;
+}
+/* скидання стилів які призначає браузер */
+body,
+h3,
+h4,
+p {
+  margin: 0;
+}
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+/* стилі для тексту:шрифт */
+body,
+h3,
+.old, button {
+  font-family: "Montserrat", sans-serif;
+}
+
+h4,
+span {
+  font-family: "Fraunces", serif;
+}
+/* стилі "сторінки" - тло */
+body {
+  background-color: #f2eae2;
+  /* стилі для шрифта які успадкуються автоматично більшістю елементів від батьківського елементу */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+/* стилі картки */
+article {
+  width: 600px;
+  height: 450px;
+  background-color: #fff;
+  margin: 0 auto; /* зсув картки на середину розподілом простору праворуч*/
+
+  /* керування внутрішніми елементами */
+  display: flex;
+}
+
+/* стилі лівої частини */
+.bgimg {
+  width: 50%;
+  height: 450px;
+
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: contain;
+}
+/* стилі правої частини */
+.content {
+  width: 50%;
+  padding: 32px;
+}
+
+h3 {
+  line-height: normal;
+  letter-spacing: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #6c7289;
+}
+h4 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #1c232b;
+  margin-bottom: 24px;
+}
+p {
+  line-height: 23px;
+  color: #6c7289;
+  margin-bottom: 29px;
+}
+.prices {
+  display: flex;
+  align-items: center;
+  column-gap: 19px;
+  margin-bottom: 30px;
+}
+.actual {
+  color: #3d8168;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.old {
+  text-decoration: line-through;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #6c7289;
+}
+button {
+  width: 236px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #3d8168;
+  color: #fff;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+
+  /* плавний перехід стану */
+  transition: background-color 0.5s ease;
+}
+button:hover {
+    background-color: #1A4032;
+    cursor: pointer;
+}
+
+
+/* на цьому на сьогодні все :)  майже))))*/
